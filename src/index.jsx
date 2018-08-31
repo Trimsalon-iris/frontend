@@ -7,14 +7,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles/main';
 
 import App from './components/App';
-import Hello from './components/Hello';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Switch>
         <Route path="/" exact component={App} />
-        <Route path="/hello" component={Hello} />
       </Switch>
     </Router>
   </Provider>,
